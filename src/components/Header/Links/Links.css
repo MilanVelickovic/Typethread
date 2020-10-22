@@ -1,0 +1,25 @@
+.Links {
+    color: #26292C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media(max-width: 1380px) {
+    .Links {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .Links {
+        display: none;
+    }
+}
+
