@@ -1,0 +1,12 @@
+.Link {
+    margin: 0% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media(max-width: 992px) {
+    .Link {
+        margin: 0% 5%;
+    }
+}

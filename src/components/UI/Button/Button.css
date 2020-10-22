@@ -1,0 +1,101 @@
+.Button {
+    width: 107px;
+    height: 24px;
+    color: #2A434B;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    border: 0px solid transparent; 
+}
+
+.smallButton {
+    width: 172px;
+    height: 55px;
+}
+
+.mediumButton {
+    width: 172px;
+    height: 55px;
+}
+
+.largeButton {
+    width: 330px;
+    height: 68px;
+}
+
+.orangeButton {
+    color: #FFF;
+    background-color: #FF7364;
+    border-radius: 8px;
+    box-shadow: 0px 20px 50px rgba(255, 115, 100, 0.1);
+}
+
+.purpleButton {
+    color: #FFF;
+    background-color: #3639A4;
+    border-radius: 8px;
+    box-shadow: 0px 20px 50px rgba(255, 115, 100, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 1380px) {
+    .Button {
+        width: 100px;
+        height: 17px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .smallButton {
+        font-size: 13px;
+        width: 90px;
+        height: 28px;
+    }
+
+    .mediumButton {
+        width: 120px;
+        height: 33px;
+    }
+
+    .largeButton {
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 768px) {
+    .Button {
+        font-size: 13px;
+    }
+
+    .largeButton {
+        width: 200px;
+        height: 35px;
+    }
+}
+
+@media(max-width: 600px) {
+    .Button {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    .largeButton {
+        width: 70%;
+        height: 40px;
+    }
+}
+
+@media(max-width: 415px) {
+    .Button {
+        font-size: 16px;
+    }
+    .largeButton {
+        width: 90%;
+        height: 40px;
+    }
+}
