@@ -62,9 +62,25 @@
     align-items: center;
 }
 
-@media(max-width: 450px) {
+@media(max-width: 768px) {
     .Footer {
         height: fit-content;
+        padding: 2% 10%;
+    }
+    
+    .Footer .leftSideFooter img {
+        width: 70%;
+    }
+    
+    .Footer .leftSideFooter p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 450px) {
+    .Footer {
         padding: 2% 0%;
         flex-direction: column;
     }
