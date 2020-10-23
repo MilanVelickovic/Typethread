@@ -18,7 +18,7 @@
 }
 
 .Columns ul li {
-    padding: 10% 0%;
+    padding: 10px 0px;
     color: #181C2F;
     font-size: 15px;
     font-style: normal;
@@ -35,6 +35,14 @@
     outline: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
 @media(max-width: 450px) {
     .Columns {
         justify-content: space-between;
@@ -47,5 +55,13 @@
     
     .Columns ul li {
         font-size: 14px;
+    }
+
+    .hidden {
+        display: block;
+    }
+    
+    .shown {
+        display: none;
     }
 }

@@ -27,6 +27,8 @@ const Columns = (props) => (
                 <li>About Us</li>
                 <li>Customers</li>
                 <li>Blog</li>
+                <li className="hidden">Sign In</li>
+                <li className="hidden"><img src={twitterIcon} alt="Twitter Icon"/></li>
             </ul>
         </Column>
         <Column mutable={true}>
@@ -38,8 +40,8 @@ const Columns = (props) => (
                     </div>
                 </li>
                 <li style={{display: 'flex', justifyContent: 'center'}}><Button size="small" color="orange">Sign Up</Button></li>
-                <li>Sign In</li>
-                <li><img src={twitterIcon} alt="Twitter Icon"/></li>
+                <li className="shown">Sign In</li>
+                <li className="shown"><img src={twitterIcon} alt="Twitter Icon"/></li>
             </ul>
         </Column>
     </div>
