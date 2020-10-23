@@ -29,7 +29,7 @@ const Columns = (props) => (
                 <li>Blog</li>
             </ul>
         </Column>
-        <Column>
+        <Column mutable={true}>
             <h2>Get started</h2>
             <ul>
                 <li>
@@ -37,7 +37,7 @@ const Columns = (props) => (
                         <input type="text" placeholder="Email address"/><img src={envelopeIcon} alt="Envelope Icon"/>
                     </div>
                 </li>
-                <li><Button size="small" color="orange">Sign Up</Button></li>
+                <li style={{display: 'flex', justifyContent: 'center'}}><Button size="small" color="orange">Sign Up</Button></li>
                 <li>Sign In</li>
                 <li><img src={twitterIcon} alt="Twitter Icon"/></li>
             </ul>

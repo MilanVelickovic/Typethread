@@ -34,3 +34,18 @@
     border: 0;
     outline: none;
 }
+
+@media(max-width: 450px) {
+    .Columns {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .Columns h2 {
+        font-size: 17px;
+    }
+    
+    .Columns ul li {
+        font-size: 14px;
+    }
+}
