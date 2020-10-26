@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 30;
 }
 
 .Header .logoAndLinksPart {
@@ -14,10 +15,20 @@
     align-items: center;
 }
 
-.Header .burgerMenu {
+.Header .logoAndLinksPart .linksHolder {
+    display: block;
+}
+
+.Header .changableIcon {
     display: none;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.Header .changableIcon img {
+    width: 26px;
+    height: 22px;
 }
 
 .Header .user {
@@ -28,6 +39,29 @@
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+.burgerMenu {
+    width: 100%;
+    height: 89vh;
+    background-color: #FFF;
+    background-image: url('../../assets/Background/Ellipse\ 717.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 32ch;
+    z-index: 10;
+    position: absolute;
+    top: 11.5%;
+    left: 0;
+    transition: 0.4s linear;
+}
+
+.burgerMenu p {
+    margin-left: 60px;
+    color: #687992;
+    position: absolute;
+    bottom: 30px;
+    float: left;
 }
 
 @media(max-width: 1380px) {
@@ -43,6 +77,11 @@
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
     }
 
+    .Header .logoAndLinksPart img {
+        width: 70%;
+        height: 60%;
+    }
+
     .Header img {
         width: 55%;
         height: 45%;
@@ -52,11 +91,15 @@
         justify-content: center;
     }
 
+    .Header .logoAndLinksPart .linksHolder {
+        display: none;
+    }
+
     .Header .options {
         display: none;
     }
 
-    .Header .burgerMenu {
+    .Header .changableIcon {
         display: flex;
     }
 

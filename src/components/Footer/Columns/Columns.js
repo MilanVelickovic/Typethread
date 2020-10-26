@@ -39,7 +39,7 @@ const Columns = (props) => (
                         <input type="text" placeholder="Email address"/><img src={envelopeIcon} alt="Envelope Icon"/>
                     </div>
                 </li>
-                <li style={{display: 'flex', justifyContent: 'center'}}><Button size="small" color="orange">Sign Up</Button></li>
+                <li className="buttonPosition"><Button size="small" color="orange">Sign Up</Button></li>
                 <li className="shown">Sign In</li>
                 <li className="shown"><img src={twitterIcon} alt="Twitter Icon"/></li>
             </ul>

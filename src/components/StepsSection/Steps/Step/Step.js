@@ -4,7 +4,7 @@ import './Step.css';
 
 const Step = (props) => (
     <div className="Step">
-        <img src={props.image} alt="Image"/>
+        <img src={props.image} alt="Step"/>
         {props.children}
     </div>
 );

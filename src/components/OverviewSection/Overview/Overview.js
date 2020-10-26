@@ -20,7 +20,7 @@ const Overview = (props) => {
                 {props.children}
             </div>
             <div className="rightSideOverview">
-                <img src={props.image} className={attachedClassesForImage.join(' ')} alt="Overview image"/>
+                <img src={props.image} className={attachedClassesForImage.join(' ')} alt="Overview"/>
             </div>
         </div>
     );

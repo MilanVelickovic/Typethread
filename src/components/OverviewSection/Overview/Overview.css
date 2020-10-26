@@ -112,6 +112,10 @@
     .Overview .leftSideOverview {
         padding: 10% 0%;
     }
+
+    .Overview .leftSideOverview p {
+        width: 98%;
+    }
     
     .Overview .rightSideOverview {
         width: 100%;
@@ -119,6 +123,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 
     .Overview .rightSideOverview img {
