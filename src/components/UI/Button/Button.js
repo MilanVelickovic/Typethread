@@ -16,6 +16,9 @@ const Button = (props) => {
         case "large":
             attachedClasses.push("largeButton");
             break;
+        case "custom":
+            attachedClasses.push("customButton");
+            break;
         default:
             break;
     }
@@ -26,6 +29,9 @@ const Button = (props) => {
             break;
         case "purple":
             attachedClasses.push("purpleButton");
+            break;
+        case "mixBlueGreen":
+            attachedClasses.push("mixBlueGreenButton");
             break;
         default:
             break;

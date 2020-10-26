@@ -41,29 +41,6 @@
     align-items: center;
 }
 
-.burgerMenu {
-    width: 100%;
-    height: 89vh;
-    background-color: #FFF;
-    background-image: url('../../assets/Background/Ellipse\ 717.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 32ch;
-    z-index: 10;
-    position: absolute;
-    top: 11.5%;
-    left: 0;
-    transition: 0.4s linear;
-}
-
-.burgerMenu p {
-    margin-left: 60px;
-    color: #687992;
-    position: absolute;
-    bottom: 30px;
-    float: left;
-}
-
 @media(max-width: 1380px) {
     .Header img {
         width: 30%;
@@ -105,5 +82,23 @@
 
     .Header .user {
         display: flex;
+    }
+
+}
+
+@media(max-width: 450px) {
+    .Header .logoAndLinksPart img {
+        width: 60%;
+        height: 50%;
+    }
+
+    .burgerMenu {
+        height: 89vh;
+        background-position-x: -4ch;
+        z-index: 10;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        transition: 0.4s linear;
     }
 }

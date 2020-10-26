@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Button from '../UI/Button/Button';
 import Links from './Links/Links';
+import Dropdown from '../UI/Dropdown/Dropdown';
 
 import './Header.css';
 
@@ -13,14 +14,21 @@ import exitIcon from '../../assets/Header/exit.svg';
 const Header = () => {
 
     let [burgerMenuDisplay, setBurgerMenuDisplay] = useState(false);
+    let [profileDisplay, setProfileDisplay] = useState(false);
 
     return (
         <>
         <header className="Header">
             <div className="changableIcon">
                 {!burgerMenuDisplay ? 
-                <img src={burgerMenuIcon} onClick={() => setBurgerMenuDisplay(!burgerMenuDisplay)} alt="Burger icon"/> :
-                <img src={exitIcon} onClick={() => setBurgerMenuDisplay(!burgerMenuDisplay)} alt="Exit icon"/>}
+                <img src={burgerMenuIcon} onClick={() => {
+                    setBurgerMenuDisplay(!burgerMenuDisplay);
+                    setProfileDisplay(false);
+                }} alt="Burger icon"/> :
+                <img src={exitIcon} onClick={() => {
+                    setBurgerMenuDisplay(!burgerMenuDisplay);
+                    setProfileDisplay(false);
+                }} alt="Exit icon"/>}
             </div>
             <div className="logoAndLinksPart">
                 <img src={logo} alt="Logo"/>
@@ -33,13 +41,14 @@ const Header = () => {
                 <Button size="medium" color="orange">Sign up</Button>
             </div>
             <div className="user">
-                <img src={userIcon} alt="User"/>
+                <img src={userIcon} onClick={() => {
+                    setProfileDisplay(!profileDisplay);
+                    setBurgerMenuDisplay(false);
+                }} alt="User"/>
             </div>
         </header>
-        {burgerMenuDisplay ? <div className="burgerMenu">
-            <Links forPhone={true}/>
-            <p>Terms&nbsp;&&nbsp;Services</p>
-        </div> : null}
+        {burgerMenuDisplay ? <Dropdown show="links"/> : null}
+        {profileDisplay ? <Dropdown show="profile"/> : null}
         </>
     );
 };
