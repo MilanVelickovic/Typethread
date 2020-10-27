@@ -20,6 +20,14 @@
     }
 }
 
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 600px) {
+    
+}
+
 @media(max-width: 450px) {
     .ExploreSection {
         padding: 5% 8%;

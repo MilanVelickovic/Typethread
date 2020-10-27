@@ -59,26 +59,32 @@
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 600px) {
     .Columns {
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
-
-    .Columns h2 {
-        font-size: 17px;
-    }
-    
     .Columns ul li {
+        padding: 10px 0px;
         font-size: 14px;
     }
-
     .hidden {
+        font-size: 12px;
         display: block;
     }
     
     .shown {
         display: none;
+    }
+}
+
+@media(max-width: 450px) {
+    .Columns {
+        justify-content: space-between;
+    }
+
+    .Columns h2 {
+        font-size: 17px;
     }
 
     .buttonPosition {

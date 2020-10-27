@@ -1,11 +1,13 @@
 .Header {
     max-width: 100%;
     padding: 2% 4%;
+    background-color: #FFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index: 30;
+    position: relative;
 }
 
 .Header .logoAndLinksPart {
@@ -50,8 +52,10 @@
 
 @media(max-width: 768px) {
     .Header {
+        width: 92%;
         padding: 3% 4%;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+        position: fixed;
     }
 
     .Header .logoAndLinksPart img {

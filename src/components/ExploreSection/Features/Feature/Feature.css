@@ -20,7 +20,15 @@
     transition: 0.3s linear;
 }
 
+@media(max-width: 768px) {
+    .Feature {
+        padding: 6%;
+    }
+}
 
+@media(max-width: 600px) {
+    
+}
 
 @media(max-width: 450px) {
     .Feature {
