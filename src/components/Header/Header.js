@@ -33,7 +33,7 @@ const Header = () => {
             <div className="logoAndLinksPart">
                 <img src={logo} alt="Logo"/>
                 <div className="linksHolder">
-                    <Links/>
+                    <Links forPhone={false}/>
                 </div>
             </div>
             <div className="options">

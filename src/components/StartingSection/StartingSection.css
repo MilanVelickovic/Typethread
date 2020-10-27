@@ -319,7 +319,6 @@
 
 @media(max-width: 600px) {
     .StartingSection {
-        padding: 10% 0%;  
         height: fit-content;
     }
 

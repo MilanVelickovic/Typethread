@@ -22,18 +22,20 @@ const Dropdown = (props) => {
 
     return (
         <div className={attachedClasses.join(' ')}>
-            {props.show === "links" ?
+            {props.show === "links" && props.display ?
                 <>
                 <Links forPhone={true}/>
                 <p>Terms&nbsp;&&nbsp;Services</p>
-                </> :
+                </> : null
+            }
+            {props.show === "profile" && props.display ?
                 <>
                 <div className="profile">
                 <Button size="custom" color="mixBlueGreen">Sign In</Button>
                 <Button size="custom" color="purple">Sign Up</Button>
                 </div>
                 <p className="centerText">Terms&nbsp;&&nbsp;Conditions Apply</p>
-                </>
+                </> : null
             }
         </div>
     );

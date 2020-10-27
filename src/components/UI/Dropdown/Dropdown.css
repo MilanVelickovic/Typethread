@@ -4,27 +4,13 @@
     background-color: #FFF;
     z-index: 10;
     position: fixed;
-    top: 11.5%;
+    top: 62.5px;
     transform: translateX(-100%);
     transition: .3s;
 }
 
 .Dropdown.display{
     transform: translateX(0);
-}
-
-.Dropdown::before {
-    content: '';
-    display: block;
-    transition: all 2s;
-    transform: translateX(-100%);
-}
-
-.Dropdown::after {
-    content: '';
-    display: block;
-    transition: all 2s;
-    transform: translateX(100%);
 }
 
 .ellipseLightBlue {
@@ -69,12 +55,24 @@
     align-items: center;
 }
 
+@media(max-width: 768px) {
+    .Dropdown {
+        top: 88px;
+    }
+}
+
+@media(max-width: 600px) {
+    .Dropdown {
+        top: 78px;
+    }
+}
+
 @media(max-width: 450px) {
     .Dropdown {
-        height: 91vh;
+        height: 92vh;
         z-index: 10;
         position: fixed;
-        top: 10%;
+        top: 62px;
         left: 0;
         transition: 0.4s linear;
     }
