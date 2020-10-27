@@ -38,10 +38,10 @@
 @media(max-width: 450px) {
     .DiscoverySection h2 {
         padding: 5% 0%;
-        font-size: 22px;
+        font-size: 30px;
     }
     
     .DiscoverySection p {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
