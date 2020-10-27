@@ -26,16 +26,16 @@
     font-size: 22px;
 }
 
-@media(max-width: 450px) {
+@media(max-width: 768px) {
     .DiscoverySection {
         height: 70vh;
-        padding: 0% 10%;
-        background-size: contain;
     }
+}
+
+@media(max-width: 450px) {
 
     .DiscoverySection h2 {
         padding: 5% 0%;
-        font-size: 22px;
     }
     
     .DiscoverySection p {

@@ -20,12 +20,10 @@
     }
 }
 
-@media(max-width: 768px) {
-
-}
-
 @media(max-width: 600px) {
-    
+    .ExploreSection h2 {
+        margin-bottom: 12%;
+    }
 }
 
 @media(max-width: 450px) {
