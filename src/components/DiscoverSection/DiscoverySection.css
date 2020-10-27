@@ -36,6 +36,10 @@
 }
 
 @media(max-width: 450px) {
+    .DiscoverySection {
+        padding: 2% 14%;
+    }
+
     .DiscoverySection h2 {
         padding: 5% 0%;
         font-size: 30px;
