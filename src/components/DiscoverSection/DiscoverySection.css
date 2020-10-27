@@ -30,15 +30,18 @@
     .DiscoverySection {
         height: 70vh;
     }
+    .DiscoverySection h2 {
+        font-size: 24px;
+    }
 }
 
 @media(max-width: 450px) {
-
     .DiscoverySection h2 {
         padding: 5% 0%;
+        font-size: 18px;
     }
     
     .DiscoverySection p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
