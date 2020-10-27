@@ -3,7 +3,7 @@
     height: 89vh;
     background-color: #FFF;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 11.5%;
     left: 0;
     transition: 0.4s linear;
