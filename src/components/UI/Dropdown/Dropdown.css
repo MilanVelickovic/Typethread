@@ -5,8 +5,26 @@
     z-index: 10;
     position: fixed;
     top: 11.5%;
-    left: 0;
-    transition: 0.4s linear;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.Dropdown.display{
+    transform: translateX(0);
+}
+
+.Dropdown::before {
+    content: '';
+    display: block;
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.Dropdown::after {
+    content: '';
+    display: block;
+    transition: all 2s;
+    transform: translateX(100%);
 }
 
 .ellipseLightBlue {

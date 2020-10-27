@@ -8,6 +8,10 @@ import './Dropdown.css';
 const Dropdown = (props) => {
     let attachedClasses = ["Dropdown"];
 
+    if (props.display) {
+        attachedClasses.push("display");
+    }
+
     if (props.show === "links") {
         attachedClasses.push("ellipseLightBlue");
     }

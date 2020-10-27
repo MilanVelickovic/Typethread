@@ -47,8 +47,8 @@ const Header = () => {
                 }} alt="User"/>
             </div>
         </header>
-        {burgerMenuDisplay ? <Dropdown show="links"/> : null}
-        {profileDisplay ? <Dropdown show="profile"/> : null}
+        <Dropdown show="links" display={burgerMenuDisplay}/>
+        <Dropdown show="profile" display={profileDisplay}/>
         </>
     );
 };
