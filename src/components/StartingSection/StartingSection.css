@@ -301,6 +301,7 @@
 
     .StartingSection .content {
         width: 70%;
+        margin-top: 62.5px;
     }
 
     .StartingSection .content .leftSide .trialOptions {
