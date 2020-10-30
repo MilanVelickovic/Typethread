@@ -11,6 +11,7 @@
     color: #3639A4;
     font-size: 23px;
     font-weight: 400;
+    outline: none;
 }
 
 @media(max-width: 1024px) {
