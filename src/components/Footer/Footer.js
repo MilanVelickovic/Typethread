@@ -18,7 +18,7 @@ const Footer = () => (
             <Columns/>
         </div>
         <div className="bottomSideFooter">
-            <p className="hidden">&copy;&nbsp;2020&nbsp;Typethread&nbsp;|&nbsp;Terms of Service&nbsp;|&nbsp;Privacy and Policy</p>
+            <p className="hidden movedPart">&copy;&nbsp;2020&nbsp;<b>Typethread</b><br/>Terms of Service&nbsp;|&nbsp;Privacy and Policy</p>
             <div className="language">
                 <img src={globeIcon} className="shown" alt="Globe Icon"/>
                 <img src={globePurpleIcon} className="hidden" alt="Globe Icon"/>

@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.DiscoverySection h2, p {
+.DiscoverySection h2, .DiscoverySection p {
     color: #2A434B;
 }
 
