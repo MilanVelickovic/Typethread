@@ -6,3 +6,22 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media(max-width: 1024px) {
+    .Steps {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .Steps {
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 450px) {
+    .Steps {
+        max-width: 100%;
+    }
+}

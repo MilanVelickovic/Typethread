@@ -1,8 +1,8 @@
 .Feature {
+    width: 381px;
+    height: 283px;
     padding: 4.5%;
-    width: 38%;
     transition: 0.3s linear;
-    cursor: pointer;
 }
 
 .Feature img {
@@ -20,29 +20,42 @@
     transition: 0.3s linear;
 }
 
+@media(max-width: 1024px) {
+    .Feature {
+        width: 360px;
+        height: 240px;
+        padding: 4.5%;
+    }
+}
+
 @media(max-width: 768px) {
     .Feature {
         padding: 6%;
     }
 }
 
-@media(max-width: 600px) {
-    
-}
-
 @media(max-width: 450px) {
     .Feature {
-        width: 70%;
+        width: 60%;
         margin-bottom: 10%;
-        padding: 8%;
+        padding: 8% 6%;
+        background-color: #FFF;
+        border-radius: 8px;
+        box-shadow: 0px 20px 30px rgba(54, 57, 164, 0.05);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
-    .Feature img {
-        width: 40px;
-        height: 40px;
+    .Feature p {
+        font-size: 18px;
+        line-height: 26px;
     }
+
+    .Feature img {
+        width: 50px;
+        height: 50px;
+    }
+
 }

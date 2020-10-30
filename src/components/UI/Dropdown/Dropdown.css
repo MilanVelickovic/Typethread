@@ -1,12 +1,14 @@
 .Dropdown {
     width: 100%;
-    height: 89vh;
+    height: 100vh;
+    padding-top: 62.5px;
     background-color: #FFF;
     z-index: 10;
     position: fixed;
-    top: 62.5px;
+    top: 0;
     transform: translateX(-100%);
     transition: .3s;
+    display: none;
 }
 
 .Dropdown.display{
@@ -17,30 +19,30 @@
     background-image: url('../../../assets/Background/ellipseLightBlue.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: -7ch;
-    background-position-y: 36ch;
+    background-position: bottom;
+    background-position-x: -10ch;
 }
 
 .ellipseLightGray {
     background-image: url('../../../assets/Background/ellipseLightGray.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -20ch;
-    background-position-y: 26ch;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .Dropdown p {
-    margin-left: 60px;
     color: #687992;
     font-size: 16px;
     position: absolute;
-    bottom: 34px;
-    float: left;
+    bottom: 10%;
+    left: 10%;
 }
 
 .Dropdown .centerText {
     width: 100%;
     margin: 0;
+    bottom: 12%;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,25 +57,8 @@
     align-items: center;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .Dropdown {
-        top: 88px;
-    }
-}
-
-@media(max-width: 600px) {
-    .Dropdown {
-        top: 78px;
-    }
-}
-
-@media(max-width: 450px) {
-    .Dropdown {
-        height: 92vh;
-        z-index: 10;
-        position: fixed;
-        top: 62px;
-        left: 0;
-        transition: 0.4s linear;
+        display: block;
     }
 }

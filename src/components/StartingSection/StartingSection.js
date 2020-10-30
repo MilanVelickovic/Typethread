@@ -6,12 +6,13 @@ import './StartingSection.css';
 
 import illustration from '../../assets/Background/illustration.svg';
 import arrowRightIcon from '../../assets/Arrows/arrow-thin-right.svg';
+import borderArrowDown from '../../assets/Background/borderArrowDown.svg';
 
 const StartingSection = () => (
     <div className="StartingSection">
         <div className="content">
             <div className="leftSide">
-                <h1>Stay creative.</h1>
+                <h1>Stay Creative.</h1>
                 <h1>Schedule Threads</h1>
                 <p>While you stay creative. Your audience grows.</p>
                 <Button size="large" color="purple">Start Your Free Trial&nbsp;<img src={arrowRightIcon} alt="Arrow right"/></Button>
@@ -34,6 +35,7 @@ const StartingSection = () => (
 			    <span class="m_scroll_arrows trei"></span>
 		    </div>
         </div>
+        <img src={borderArrowDown} alt="ArrowDown"/>
     </div>
 );
 

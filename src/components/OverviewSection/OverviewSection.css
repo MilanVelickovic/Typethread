@@ -1,10 +1,10 @@
 .OverviewSection {
-    max-width: 100%;
-    padding: 1% 10%;
+    max-width: 1250px;
+    margin: 100px auto 20px auto;
 }
 
 .OverviewSection .description {
-    padding: 4% 0%;
+    padding: 50px 0px;
 }
 
 .OverviewSection .description h1, p {
@@ -13,32 +13,56 @@
 
 .OverviewSection .description h1 {
     color: #2A434B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
 }
 
 .OverviewSection .description p {
-    line-height: 30px;
     color: #222222;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+@media(max-width: 1440px) {
+    .OverviewSection {
+        max-width: 900px;
+    }
+
+    .OverviewSection .description h1 {
+        font-size: 40px;
+    }
+    
+    .OverviewSection .description p {
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 1024px) {
+    .OverviewSection {
+        max-width: 700px;
+    }
+
     .OverviewSection .description h1 {
-        font-size: 26px;
+        font-size: 32px;
     }
     
     .OverviewSection .description p {
         font-size: 16px;
     }
-
-    .OverviewSection p, h2 {
-        margin: 1% 0%;
-    }
 }
 
 @media(max-width: 768px) {
-    .OverviewSection .description h1 {
-        font-size: 26px;
+    .OverviewSection {
+        max-width: 500px;
     }
 
+    .OverviewSection .description h1 {
+        font-size: 28px;
+    }
+    
     .OverviewSection .description p {
         font-size: 16px;
     }
@@ -46,29 +70,38 @@
 
 @media(max-width: 600px) {
     .OverviewSection {
-        padding: 1% 10%;
-    }
-
-    .OverviewSection .description {
-        padding: 12% 0%;
+        max-width: 500px;
     }
 
     .OverviewSection .description h1 {
-        font-size: 22px;
+        font-size: 30px;
+        line-height: 36px;
     }
-
+    
     .OverviewSection .description p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 23px; 
     }
 }
 
 @media(max-width: 450px) {
     .OverviewSection {
-        padding: 1% 0%;
+        max-width: 100%;
+        margin-top: 10px;
     }
 
     .OverviewSection .description {
-        padding: 10% 5%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .OverviewSection .description h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .OverviewSection .description p {
+        font-size: 21px;
+        line-height: 32px; 
     }
 }

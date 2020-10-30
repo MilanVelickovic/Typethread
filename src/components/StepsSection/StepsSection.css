@@ -1,10 +1,13 @@
 .StepsSection {
-    max-width: 100%;
-    padding: 1% 18%;
+    max-width: 1250px;
+    margin: 20px auto;
 }
 
 .StepsSection .description {
-    padding: 4% 0%;
+    padding: 4% 3%;
+    font-size: 26px;
+    line-height: 42px;
+    font-style: normal;
 }
 
 .StepsSection .description h1, p {
@@ -13,57 +16,94 @@
 
 .StepsSection .description h1 {
     color: #2A434B;
+    font-size: 48px;
+    font-style: normal;
+    line-height: 62px;
 }
 
 .StepsSection .description p {
-    line-height: 30px;
     color: #222222;
+    font-size: 26px;
+    line-height: 42px;  
 }
 
-.StepsSection .description p:first-of-type {
-    font-size: 18px;
-    font-weight: 500;
+.StepsSection .description p:first-of-type {  
+    font-weight: 600;
+}
+
+@media(max-width: 1440px) {
+    .StepsSection {
+        max-width: 900px;
+    }
+    
+    .StepsSection .description h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .StepsSection .description p {
+        font-size: 22px; 
+    }
+}
+
+@media(max-width: 1024px) {
+    .StepsSection {
+        max-width: 700px;
+    }
+    
+    .StepsSection .description h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    
+    .StepsSection .description p {
+        font-size: 16px; 
+    }
 }
 
 @media(max-width: 768px) {
+    .StepsSection {
+        max-width: 500px;
+    }
+    
     .StepsSection .description h1 {
-        font-size: 26px;
+        font-size: 32px;
     }
-
+    
     .StepsSection .description p {
-        font-size: 14px;
-    }
-
-    .StepsSection .description p:first-of-type {
-        font-size: 16px;
+        font-size: 18px; 
     }
 }
 
 @media(max-width: 600px) {
     .StepsSection {
-        padding: 1% 10%;
+        max-width: 500px;
     }
-
+    
     .StepsSection .description h1 {
-        font-size: 22px;
+        font-size: 30px;
+        line-height: 36px;
     }
-
+    
     .StepsSection .description p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .StepsSection .description p:first-of-type {
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 23px; 
     }
 }
 
 @media(max-width: 450px) {
     .StepsSection {
-        padding: 1% 5%;
+        max-width: 100%;
+        padding: 0px 10px;
     }
 
-    .StepsSection .description h1 {
-        font-size: 22px;
+    .StepsSection .description {
+        padding: 0px 15px;
+        margin-bottom: 30px;
+    }
+
+    .StepsSection .description p {
+        font-size: 20px;
+        line-height: 32px; 
     }
 }

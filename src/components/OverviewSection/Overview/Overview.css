@@ -1,6 +1,6 @@
 .Overview {
-    width: 100%;
-    padding: 3% 0%;
+    max-width: 1250px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,25 +13,34 @@
 
 .Overview .leftSideOverview {
     width: 36%;
+    padding-top: 70px;
 }
 
 .Overview .leftSideOverview img {
-    width: 24px;
-    height: 24px;
+    width: 36.84pxpx;
+    height: 35px;
 }
 
 .Overview .leftSideOverview h2 {
     color: #3639A4;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
 }
 
-.Overview .leftSideOverview p{
-    width: 90%;
+.Overview .leftSideOverview p {
     color: #222222;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
     text-align: left;
 }
 
-.Overview .leftSideOverview p:first-of-type{
+.Overview .leftSideOverview p:first-of-type {
     color: #2A434B;
+    font-size: 22px;
 }
 
 .Overview .rightSideOverview {
@@ -51,94 +60,87 @@
     right: -18%;
 }
 
-@media(max-width: 1024px) {
-    .Overview .leftSideOverview img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .Overview .leftSideOverview h2 {
-        font-size: 20px;
-    }
-
-    .Overview .leftSideOverview p:first-of-type{
-        font-size: 15px;
-    }
-    
-    .Overview .leftSideOverview p{
-        font-size: 14px;
-    }
-
-    .Overview .rightSideOverview img {
-        width: 95%;
-    }
-}
-
-@media(max-width: 600px) {
+@media(max-width: 1440px) {
     .Overview {
-        width: 100%;
-        padding: 3% 0%;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-
-    .Overview .leftSideOverview {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Overview .leftSideOverview p{
-        width: 100%;
-        text-align: center;
+        max-width: 900px;
     }
     
-    .Overview .rightSideOverview {
-        width: 100%;
-    }
-
-    .moveImageLeft {
-        left: -6%;
+    .Overview .leftSideOverview h2 {
+        font-size: 30px;
+        line-height: 40px;
     }
     
-    .moveImageRight {
-        right: -8%;
+    .Overview .leftSideOverview p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .Overview .leftSideOverview p:first-of-type {
+        font-size: 18px;
+        line-height: 16px;
     }
 }
 
-@media(max-width: 450px) {
-    .Overview .leftSideOverview {
-        padding: 10% 0%;
+@media(max-width: 1024px) {
+    .Overview {
+        max-width: 700px;
     }
 
-    .Overview .leftSideOverview p {
-        width: 98%;
+    .Overview .leftSideOverview {
+        padding-top: 50px;
     }
     
-    .Overview .rightSideOverview {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .Overview .leftSideOverview h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .Overview .leftSideOverview p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .Overview .leftSideOverview p:first-of-type {
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    .Overview .leftSideOverview img {
+        width: 31.84pxpx;
+        height: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .Overview {
+        max-width: 500px;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
     }
 
-    .Overview .rightSideOverview img {
-        width: 120%;
+    .Overview .leftSideOverview {
+        width: 100%;
+        padding-top: 0px;
+        text-align: center;
     }
-
+    
     .Overview .leftSideOverview h2 {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 26px;
+    }
+    
+    .Overview .leftSideOverview p {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .Overview .leftSideOverview p:first-of-type {
         text-align: center;
     }
 
-    .Overview .leftSideOverview p{
-        font-size: 14px;
-        line-height: 22px;
+    .Overview .rightSideOverview {
+        width: 100%;
     }
 
     .moveImageLeft {
@@ -146,6 +148,77 @@
     }
     
     .moveImageRight {
-        right: -8%;
+        right: -5%;
     }
 }
+
+@media(max-width: 600px) {
+    .Overview .leftSideOverview {
+        width: 600px;
+        padding-top: 0px;
+        text-align: center;
+    }
+    
+    .Overview .leftSideOverview h2 {
+        font-size: 28px;
+    }
+    
+    .Overview .leftSideOverview p {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .Overview .leftSideOverview p:first-of-type {
+        text-align: center;
+    }
+
+    .Overview .rightSideOverview {
+        width: 100%;
+    }
+
+    .moveImageLeft {
+        left: -10%;
+    }
+    
+    .moveImageRight {
+        right: -5%;
+    }
+}
+
+@media(max-width: 450px) {
+    .Overview .leftSideOverview {
+        max-width: 90%;
+        padding-top: 0px;
+        text-align: center;
+    }
+    
+    .Overview .leftSideOverview h2 {
+        font-size: 28px;
+    }
+    
+    .Overview .leftSideOverview p {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .Overview .leftSideOverview p:first-of-type {
+        text-align: center;
+    }
+
+    .Overview .rightSideOverview {
+        max-width: 90%;
+    }
+
+    .moveImageLeft {
+        left: -10%;
+    }
+    
+    .moveImageRight {
+        right: -5%;
+    }
+}
+
+
+

@@ -13,14 +13,14 @@ const Steps = () => (
     <div className="Steps">
         <Step image={timeIcon}>
             <h2>More time to create</h2>
-            <p>Schedule your content. Have more time for what truly matter.</p>
+            <p>Schedule your content. Have more time for what truly matters.</p>
         </Step>
         <Step image={audioIcon}>
             <h2>Reach Bigger audience</h2>
             <p>Reach bigger audiences with well timed threads.</p>
         </Step>
         <Step image={heartIcon}>
-            <h2>Long-Term fans</h2>
+            <h2>Long term fans</h2>
             <p>Build relationships and long-term fans that value your content.</p>
         </Step>
         <Step image={lockIcon}>
