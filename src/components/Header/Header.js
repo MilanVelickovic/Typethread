@@ -11,6 +11,8 @@ import userIcon from '../../assets/Header/user.svg';
 import burgerMenuIcon from '../../assets/Header/burger-menu.svg';
 import exitIcon from '../../assets/Header/exit.svg';
 
+import { fixBody } from '../../position';
+
 const Header = () => {
 
     let [burgerMenuDisplay, setBurgerMenuDisplay] = useState(false);
@@ -23,10 +25,12 @@ const Header = () => {
                 {!burgerMenuDisplay ? 
                 <img src={burgerMenuIcon} onClick={() => {
                     setBurgerMenuDisplay(!burgerMenuDisplay);
+                    fixBody(!burgerMenuDisplay);
                     setProfileDisplay(false);
                 }} alt="Burger icon"/> :
                 <img src={exitIcon} onClick={() => {
                     setBurgerMenuDisplay(!burgerMenuDisplay);
+                    fixBody(!burgerMenuDisplay);
                     setProfileDisplay(false);
                 }} alt="Exit icon"/>}
             </div>
@@ -43,6 +47,7 @@ const Header = () => {
             <div className="user">
                 <img src={userIcon} onClick={() => {
                     setProfileDisplay(!profileDisplay);
+                    fixBody(!profileDisplay);
                     setBurgerMenuDisplay(false);
                 }} alt="User"/>
             </div>
