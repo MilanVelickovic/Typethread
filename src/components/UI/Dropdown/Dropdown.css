@@ -11,7 +11,7 @@
     display: none;
 }
 
-.Dropdown.display{
+.Dropdown.display {
     transform: translateX(0);
 }
 
