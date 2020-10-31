@@ -15,7 +15,7 @@ function fadeIn (element) {
                 scrub: true,
                 start: "top center+=50",
                 end: "bottom center+=200",
-                markers: true
+                //markers: true
             }
         }
     );
