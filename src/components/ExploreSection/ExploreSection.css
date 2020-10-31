@@ -27,6 +27,11 @@
     }
 }
 
+/*
+transform-scale
+js gsap
+*/
+
 @media(max-width: 1024px) {
     .ExploreSection {
         max-width: 700px;

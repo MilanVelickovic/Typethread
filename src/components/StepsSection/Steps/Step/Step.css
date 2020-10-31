@@ -11,6 +11,7 @@
 
 .Step:hover {
     border: 1px solid transparent;
+    transform: scale(1.04);
 }
 
 .Step img {

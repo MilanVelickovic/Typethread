@@ -17,8 +17,13 @@
 }
 
 .Overview .leftSideOverview img {
-    width: 36.84pxpx;
+    width: 35px;
     height: 35px;
+}
+
+.Overview .leftSideOverview img:hover {
+    transform: rotate(360deg);
+    transition: 1s all;
 }
 
 .Overview .leftSideOverview h2 {
@@ -106,7 +111,7 @@
     }
 
     .Overview .leftSideOverview img {
-        width: 31.84pxpx;
+        width: 30px;
         height: 30px;
     }
 }

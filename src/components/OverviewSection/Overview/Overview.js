@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+import { fadeIn } from '../../../animations';
 
 import './Overview.css';
 
 const Overview = (props) => {
+
+    let overviewElement = useRef(null);
+
+    useEffect(() => {
+        fadeIn(overviewElement);
+    });
 
     let attachedClasses = ["Overview"];
     let attachedClassesForImage = ["moveImageRight"];
@@ -14,7 +22,7 @@ const Overview = (props) => {
     }
 
     return (
-        <div className={attachedClasses.join(' ')}>
+        <div className={attachedClasses.join(' ')} ref={element => {overviewElement = element}}>
             <div className="leftSideOverview">
                 <img src={props.icon} className={attachedClassesForImage.join(' ')} alt="Overview icon"/>
                 {props.children}

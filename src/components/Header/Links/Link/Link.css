@@ -9,7 +9,7 @@
 
 .Link:hover {
     color: #3639A4;
-    font-size: 23px;
+    transform: scale(1.1);
     font-weight: 400;
     outline: none;
 }
