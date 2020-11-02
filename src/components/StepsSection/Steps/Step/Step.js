@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-import { fadeIn } from '../../../../animations';
+import { fadeInWithScroll } from '../../../../animations';
 
 import './Step.css';
 
@@ -9,7 +9,7 @@ const Step = (props) => {
     let stepElement = useRef(null);
 
     useEffect(() => {
-        fadeIn(stepElement);
+        fadeInWithScroll(stepElement);
     });
 
     return (
