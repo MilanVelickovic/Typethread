@@ -237,6 +237,10 @@
 /* ------------------------------- */
 
 @media(max-width: 1440px) {
+    .StartingSection {
+        background-position-y: 3ch;
+    }
+
     .StartingSection .content {
         max-width: 900px;
         justify-content: center;

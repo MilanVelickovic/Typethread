@@ -55,7 +55,7 @@
     pointer-events: none;
 }
 
-@media(max-width: 1380px) {
+@media(max-width: 1440px) {
     .Header img {
         width: 30%;
         height: 30%;
