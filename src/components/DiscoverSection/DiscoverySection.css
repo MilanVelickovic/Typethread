@@ -67,13 +67,6 @@
     }
 }
 
-/* landscape mode */
-@media(max-width: 820px) and (orientation: landscape){
-    .DiscoverySection {
-        height: 100vh;
-    }
-}
-
 @media(max-width: 768px) {
     .DiscoverySection {
         height: 30vh;
@@ -87,6 +80,13 @@
     .DiscoverySection p {
         font-size: 20px;
         line-height: 43.58px;
+    }
+}
+
+/* landscape mode */
+@media(min-width: 600px) and (orientation: landscape){
+    .DiscoverySection {
+        height: 100vh;
     }
 }
 
