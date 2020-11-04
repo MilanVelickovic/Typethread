@@ -67,8 +67,8 @@
     }
 }
 
-/* portrait mode */
-@media(max-width: 820px) {
+/* landscape mode */
+@media(max-width: 820px) and (orientation: landscape){
     .DiscoverySection {
         height: 100vh;
     }
