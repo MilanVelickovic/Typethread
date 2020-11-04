@@ -6,12 +6,12 @@
     border-radius: 8px;
     box-sizing: border-box;
     transition: 0.3s all;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
 }
 
 .Step:hover {
     border: 1px solid transparent;
     transform: scale(1.04);
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.05);
 }
 
 .Step img {
@@ -60,6 +60,12 @@
         height: 300px;
         padding: 4% 2%;
         margin: 20px 0px;
+        box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.05);
+    }
+
+    .Step:hover {
+        border: 1px solid transparent;
+        transform: scale(1.04);
     }
 
     .Step img {

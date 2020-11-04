@@ -40,8 +40,8 @@ const Columns = (props) => (
                     </div>
                 </li>
                 <li className="buttonPosition"><Button size="small" color="orange">Sign Up</Button></li>
-                <li className="shown" style={{textDecoration: "underline"}}>Sign In</li>
-                <li className="shown"><img src={twitterIcon} alt="Twitter Icon"/></li>
+                <li className="shown specialCssA" style={{textDecoration: "underline"}}>Sign In</li>
+                <li className="shown specialCssB"><img src={twitterIcon} alt="Twitter Icon"/></li>
             </ul>
         </Column>
     </div>

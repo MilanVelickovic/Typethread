@@ -1,6 +1,6 @@
 .Overview {
     max-width: 1250px;
-    padding: 20px 0px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 }
 
 .Overview .leftSideOverview {
-    width: 36%;
+    width: 40%;
     padding-top: 70px;
 }
 
@@ -46,10 +46,12 @@
 .Overview .leftSideOverview p:first-of-type {
     color: #2A434B;
     font-size: 22px;
+    font-weight: bold;
+    line-height: 10px;
 }
 
 .Overview .rightSideOverview {
-    width: 64%;
+    width: 60%;
 }
 
 .Overview .rightSideOverview img {

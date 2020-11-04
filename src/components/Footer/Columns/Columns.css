@@ -26,6 +26,14 @@
     line-height: 50px;
 }
 
+.specialCssA {
+    margin-top: 55px;
+}
+
+.specialCssB {
+    margin-top: 30px;
+}
+
 .input {
     margin: 16px 0px;
     font-size: 17px;
@@ -72,6 +80,14 @@
         margin: 16px 0px;
         font-size: 17px;
         line-height: 39.16px;
+    }
+
+    .specialCssA {
+        margin-top: 40px;
+    }
+    
+    .specialCssB {
+        margin-top: 30px;
     }
 }
 

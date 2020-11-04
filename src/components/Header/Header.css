@@ -50,6 +50,11 @@
     align-items: center;
 }
 
+.Header .backgroundWhite {
+    background-color: #FFF;
+    pointer-events: none;
+}
+
 @media(max-width: 1380px) {
     .Header img {
         width: 30%;

@@ -4,7 +4,9 @@ import './Feature.css';
 
 const Feature = (props) => (
     <div className="Feature">
-        <img src={props.icon} alt="Feature Icon"/>
+        <div className="featureIconHolder">
+            <img src={props.icon} alt="Feature Icon"/>
+        </div>
         {props.children}
     </div>
 );

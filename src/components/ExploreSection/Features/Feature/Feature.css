@@ -5,12 +5,16 @@
     transition: 0.3s linear;
 }
 
-.Feature img {
-    width: 27px;
-    height: 27px;
+.Feature .featureIconHolder {
     background-color: #F4FEFF;
     border-radius: 50%;
-    padding: 2%;
+    padding: 6%;
+    display: inline-block;
+}
+
+.Feature .featureIconHolder img {
+    width: 27px;
+    height: 27px;
 }
 
 .Feature:hover {
@@ -54,7 +58,7 @@
         line-height: 26px;
     }
 
-    .Feature img {
+    .Feature .featureIconHolder img {
         width: 50px;
         height: 50px;
     }

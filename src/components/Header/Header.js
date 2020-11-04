@@ -18,6 +18,12 @@ const Header = () => {
     let [burgerMenuDisplay, setBurgerMenuDisplay] = useState(false);
     let [profileDisplay, setProfileDisplay] = useState(false);
 
+    let classes = ['user'];
+
+    if (burgerMenuDisplay) {
+        classes.push("backgroundWhite");
+    }
+
     return (
         <>
         <header className="Header">
@@ -44,7 +50,7 @@ const Header = () => {
                 <Button>Sign in</Button>
                 <Button size="medium" color="orange">Sign up</Button>
             </div>
-            <div className="user">
+            <div className={classes.join(' ')}>
                 <img src={userIcon} onClick={() => {
                     setProfileDisplay(!profileDisplay);
                     fixBody(!profileDisplay);
