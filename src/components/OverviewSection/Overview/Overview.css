@@ -12,8 +12,9 @@
 }
 
 .Overview .leftSideOverview {
-    width: 40%;
+    width: 45%;
     padding-top: 70px;
+    transform: scale(0.9);
 }
 
 .Overview .leftSideOverview img {
@@ -51,7 +52,7 @@
 }
 
 .Overview .rightSideOverview {
-    width: 60%;
+    width: 55%;
 }
 
 .Overview .rightSideOverview img {
@@ -164,6 +165,7 @@
         width: 600px;
         padding-top: 0px;
         text-align: center;
+        transform: scale(1);
     }
     
     .Overview .leftSideOverview h2 {
