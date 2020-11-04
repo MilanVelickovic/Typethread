@@ -1,6 +1,14 @@
+.overviewBackgroundShape {
+    margin-top: 100px;
+    padding-top: 20px;
+    background: url('../../assets/Background/overviewBackgroundShape.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .OverviewSection {
     max-width: 1250px;
-    margin: 100px auto 20px auto;
+    margin: 20px auto 20px auto;
 }
 
 .OverviewSection .description {
