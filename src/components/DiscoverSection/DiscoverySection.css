@@ -117,6 +117,10 @@
         background-position-x: -18ch;
     }
     
+    .DiscoverySection > div {
+        transform: scale(0.9);
+    }
+
     .DiscoverySection h2 {
         margin-bottom: 20px;
         font-size: 32px;
