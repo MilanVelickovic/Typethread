@@ -63,8 +63,16 @@
 }
 
 @media(max-width: 768px) {
+    .overviewBackgroundShape {
+        margin-top: 60px;
+    }
+
     .OverviewSection {
         max-width: 500px;
+    }
+
+    .OverviewSection .description {
+        padding-bottom: 0;
     }
 
     .OverviewSection .description h1 {

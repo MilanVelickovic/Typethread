@@ -122,6 +122,7 @@
 @media(max-width: 768px) {
     .Overview {
         max-width: 500px;
+        padding-bottom: 0;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -200,9 +201,6 @@
 }
 
 @media(max-width: 450px) {
-    .Overview {
-        padding-bottom: 0px;
-    }
     
     .Overview .leftSideOverview {
         max-width: 98%;
