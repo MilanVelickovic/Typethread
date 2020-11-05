@@ -41,9 +41,9 @@
 
 @media(max-width: 450px) {
     .Feature {
-        width: 60%;
+        width: 70%;
         margin-bottom: 10%;
-        padding: 8% 6%;
+        padding: 8% 4%;
         background-color: #FFF;
         border-radius: 8px;
         box-shadow: 0px 20px 30px rgba(54, 57, 164, 0.05);
