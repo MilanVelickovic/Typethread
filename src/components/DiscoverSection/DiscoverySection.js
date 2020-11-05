@@ -21,7 +21,9 @@ const DiscoverySection = () => {
     return (
         <div className="DiscoverySection">
             <p ref={element => {pElement = element}}>Get started with <b>Typethread</b> today!</p>
-            <h2 ref={element => {hElement = element}}>Discover the most robust and user-friendly solution, to grow your twitter audience.</h2>
+            <div>
+                <h2 ref={element => {hElement = element}}>Discover the most robust and user-friendly solution, to grow your twitter audience.</h2>
+            </div>
             <Button size="large" color="purple">Start Your Free Trial&nbsp;<img src={arrowRightIcon} alt="Arrow right"/></Button>
         </div>
     );
