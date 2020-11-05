@@ -77,6 +77,10 @@
 }
 
 @media(max-width: 600px) {
+    .overviewBackgroundShape {
+        margin-top: 50px;
+    }
+
     .OverviewSection {
         max-width: 500px;
     }
@@ -99,7 +103,8 @@
     }
 
     .OverviewSection .description {
-        width: 90%;
+        max-width: 90%;
+        padding-bottom: 0;
         margin: 0 auto;
     }
 
@@ -109,6 +114,7 @@
     }
     
     .OverviewSection .description p {
+        
         font-size: 21px;
         line-height: 32px; 
     }

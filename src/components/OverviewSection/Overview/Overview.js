@@ -24,7 +24,7 @@ const Overview = (props) => {
     return (
         <div className={attachedClasses.join(' ')} ref={element => {overviewElement = element}}>
             <div className="leftSideOverview">
-                <img src={props.icon} className={attachedClassesForImage.join(' ')} alt="Overview icon"/>
+                <img src={props.icon} alt="Overview icon"/>
                 {props.children}
             </div>
             <div className="rightSideOverview">

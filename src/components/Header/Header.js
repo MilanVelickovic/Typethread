@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <>
         <header className="Header">
-            <div className="changableIcon">
+            <div className="changableIcon noSelect">
                 {!burgerMenuDisplay ? 
                 <img src={burgerMenuIcon} onClick={() => {
                     setBurgerMenuDisplay(!burgerMenuDisplay);

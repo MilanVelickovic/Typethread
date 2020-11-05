@@ -162,7 +162,7 @@
 
 @media(max-width: 600px) {
     .Overview .leftSideOverview {
-        width: 600px;
+        width: 550px;
         padding-top: 0px;
         text-align: center;
         transform: scale(1);
@@ -186,6 +186,10 @@
         width: 100%;
     }
 
+    .Overview .rightSideOverview img {
+        width: 100%;
+    }
+
     .moveImageLeft {
         left: -10%;
     }
@@ -196,14 +200,19 @@
 }
 
 @media(max-width: 450px) {
+    .Overview {
+        padding-bottom: 0px;
+    }
+    
     .Overview .leftSideOverview {
-        max-width: 90%;
-        padding-top: 0px;
+        max-width: 98%;
+        padding-top: 15px;
         text-align: center;
     }
     
     .Overview .leftSideOverview h2 {
         font-size: 29px;
+        transform: scale(0.9);
     }
     
     .Overview .leftSideOverview p {
@@ -217,15 +226,21 @@
     }
 
     .Overview .rightSideOverview {
-        max-width: 90%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Overview .rightSideOverview img {
+        width: 115%;
     }
 
     .moveImageLeft {
-        left: -10%;
+        left: -20%;
+        width: 120% !important;
     }
     
     .moveImageRight {
-        right: -5%;
+        right: -0%;
     }
 }
 

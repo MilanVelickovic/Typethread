@@ -78,6 +78,7 @@
 @media(max-width: 600px) {
     .StepsSection {
         max-width: 500px;
+        margin-top: 60px;
     }
     
     .StepsSection .description h1 {
